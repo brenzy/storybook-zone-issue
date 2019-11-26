@@ -37,6 +37,25 @@
           }
         }
       }
-    }},
+    },
+    "storybook": {
+      "root": "",
+      "sourceRoot": "src",
+      "projectType": "library",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "tsconfig.json",
+            "project": "package.json",
+            "styles": [],
+            "scripts": [],
+            "outputPath": "dist"
+          }
+        }
+      }
+    }
+  },
   "defaultProject": "component-library"
 }
